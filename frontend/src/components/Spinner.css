@@ -1,0 +1,54 @@
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* GRADIENT ANIMATED LOADER */
+.gradient-loader {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+
+  /* Gradient border */
+  background: linear-gradient(
+      135deg,
+      #6a11cb,
+      #2575fc,
+      #0f0f0f,
+      #2a0845,
+      #1f1c2c
+    )
+    border-box;
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+
+  animation: rotate-gradient 1.1s linear infinite;
+  box-shadow: 0 0 15px rgba(80, 80, 255, 0.45);
+}
+
+@keyframes rotate-gradient {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(90, 90, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(120, 120, 255, 0.6);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 10px rgba(90, 90, 255, 0.4);
+  }
+}

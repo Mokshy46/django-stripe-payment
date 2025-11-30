@@ -1,0 +1,79 @@
+/* Full page center layout */
+.success-container {
+  height: 100vh;
+  width: 100vw;
+  background: #111; /* clean dark theme */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card with soft shadow */
+.success-card {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 14px;
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+  border: 1px solid #222;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Check icon (simple & clean) */
+.success-icon {
+  font-size: 42px;
+  color: #4ade80; /* modern soft green */
+  background: #1f1f1f;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+}
+
+/* Title */
+.success-title {
+  color: #e7ffe7;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Message */
+.success-message {
+  color: #bbbbbb;
+  font-size: 15px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* Button */
+.success-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4ade80;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  transition: 0.25s ease;
+}
+
+.success-btn:hover {
+  background: #3ec46e;
+  transform: translateY(-2px);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

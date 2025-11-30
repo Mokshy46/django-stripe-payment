@@ -1,0 +1,79 @@
+/* Main page layout */
+.cancel-container {
+  height: 100vh;
+  width: 100vw;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card */
+.cancel-card {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 14px;
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+  border: 1px solid #222;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  animation: fadeIn 0.5s ease;
+}
+
+/* X icon */
+.cancel-icon {
+  font-size: 40px;
+  color: #f87171; /* soft red */
+  background: #1f1f1f;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+}
+
+/* Title */
+.cancel-title {
+  color: #ffe5e5;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Message */
+.cancel-message {
+  color: #bbbbbb;
+  font-size: 15px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* Button */
+.cancel-btn {
+  width: 100%;
+  padding: 12px;
+  background: #f87171;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  transition: 0.25s ease;
+}
+
+.cancel-btn:hover {
+  background: #ef6666;
+  transform: translateY(-2px);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
